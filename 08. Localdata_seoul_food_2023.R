@@ -147,7 +147,7 @@ close_trend <- foodshop %>%
   summarise(close_n=n())
 #open_trend 구조
 str(close_trend)
-#연도별 개업 음식점수 막대그래프
+#연도별 폐업 음식점수 막대그래프
 ggplot(data=close_trend,aes(x=close_year,y=close_n))+
   geom_col()+
   xlab("연도") + ylab("폐업수")
